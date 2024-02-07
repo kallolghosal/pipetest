@@ -17,5 +17,8 @@ jobs:
           key: ${{ secrets.SSH_KEY }} # Your server's SSH private key
 
           script: |
-            mkdir testdir
-            echo 'Test successful'
+            cd /var/www/html/dmntest
+            git pull
+            npm install
+            npm run build
+            pm2 restart pipetest
