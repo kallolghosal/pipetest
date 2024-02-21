@@ -7,7 +7,7 @@ export default function Home() {
       <div className={styles.description}>
         <h1>Home</h1>
         <p>
-          Automated CI/CD  test from Git&nbsp;
+          Automated CI/CD pipe  test from Git&nbsp;
           <code className={styles.code}>src/app/page.js</code>
         </p>
         <div>
